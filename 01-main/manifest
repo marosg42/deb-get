@@ -1,4 +1,5 @@
-https://raw.githubusercontent.com/wimpysworld/deb-get/main/01-main
+https://raw.githubusercontent.com/marosg42/deb-get/issue_710/01-main
+# https://raw.githubusercontent.com/wimpysworld/deb-get/main/01-main
 1password
 agena
 android-messages-desktop
@@ -147,6 +148,7 @@ p3x-onenote
 pandoc
 papirus-icon-theme
 #parsec
+pdfsam
 peazip
 #picocrypt
 plexmediaserver

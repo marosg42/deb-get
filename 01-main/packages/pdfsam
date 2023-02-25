@@ -1,0 +1,11 @@
+DEFVER=1
+get_github_releases "torakiki/pdfsam" "latest"
+if [ "${ACTION}" != "prettylist" ]; then
+    URL="$(grep "browser_download_url.*${HOST_ARCH}\.deb\"" "${CACHE_FILE}" | head -n1 | cut -d'"' -f4)"
+    fancy_message info ${URL}
+    VERSION_PUBLISHED="$(echo "${URL}" | cut -d'/' -f8 | tr -d v)"
+    fancy_message info ${VERSION_PUBLISHED}
+fi
+PRETTY_NAME="PDFSam"
+WEBSITE="https://pdfsam.org/"
+SUMMARY="PDFSam"
